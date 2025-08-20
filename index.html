@@ -1124,7 +1124,7 @@ async function handleAdminLoginAttempt(enteredUsername, passwordPromptMessage, c
     } else {
         const hashedPassword = await hashString(password);
         if (hashedPassword === correctHash) {
-            loggedInAdminUsers.add(enteredUscuntfacee);
+            loggedInAdminUsers.add(enteredUsername);
             saveLoggedInAdminUsers(); // Save the new admin status
             return { success: true, message: `Welcome, ${enteredUsername}! You are logged in as an Admin.` };
         } else {
